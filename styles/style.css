@@ -132,7 +132,7 @@ padding-bottom: 41px;
 .sec1-p{
     text-align: center;
     color: #534C64;
-font-size: 20px;
+font-size: 15px;
 font-weight: 500;
 line-height: 30px;
 padding-top: 10px;
@@ -147,7 +147,9 @@ font-weight: 700;
 text-align: center;
 }
 .sec1-cards{
-margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .items{
     display: flex;
@@ -164,6 +166,10 @@ padding-bottom: 48px;
 .image-container {
     position: relative;
     display: inline-block;
+  }
+  .image-container img{
+    width: 300px;
+    height: 360px;
   }
   
   .image-container:hover .play-button {
@@ -247,16 +253,28 @@ height: 90px;
   .cons{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 115px;
+  }
+  .cons .box img{
+    margin: 15px;
   }
   .box{
-    width: 317px;
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
     height: 80px;
     font-size: 20px;
     font-weight: 600;
   }
   .box:hover{
     border: 2px solid red;
-    border-radius: 30%;
+    border-radius: 50%;
+    color: #FF42A5 ;
+  }
+  .boxp{
+    text-align: center;
+    padding-top: 20px;
   }
   .sec3{
     padding-top: 120px;
@@ -286,9 +304,7 @@ font-weight: 600;
     padding: 66px 0 74px;
     
   }
-  .footer-li{
 
-  }
   .link-part{
     display: flex;
     justify-content: center;
@@ -297,14 +313,26 @@ font-weight: 600;
   .last{
     display: flex;
     justify-content: center;
-    gap: 10px;
-    color: rgba(255, 255, 255, 0.60);
+    gap: 20px;
 font-size: 16px;
 font-weight: 500;
 padding-top: 74px;
+padding-bottom: 80px;
+  }
+  .last li {
+    color: rgba(255, 255, 255, 0.60);
   }
   footer a{
     color: white;
+  }
+  .copyright{
+  text-align: center;
+  padding-bottom: 40px;
+  }
+  .copys{
+    color: rgba(255, 255, 255, 0.60);
+font-size: 16px;
+font-weight: 500;
   }
   
   
@@ -345,7 +373,10 @@ padding-top: 74px;
             flex-direction: column;
         }
         .image-container {
-            padding: 0 20px;
+            padding-left: 1rm;
+        }
+        .sec1-cards{
+          display: grid;
         }
         .sec2{
             flex-direction: column;
@@ -359,12 +390,13 @@ padding-top: 74px;
           .overlay-image {
             position: absolute;
             bottom: 0;
-            left:-30px ;
+            left:-10px ;
             bottom: 10px;
             width: 40%;
           }
           .cow-img{
             width: 80%;
+            
           }
           .sec2-p{
             color: #534C64;
@@ -374,14 +406,70 @@ padding-top: 74px;
         line-height: 30px;
         width: 300px;
         height: 140px;
-        padding: 30px 0 15px;    }     
+        padding-left: 10px;   
+      }     
  
-          .con{
-              display: grid;
-              grid-template-columns: repeat(none);
-            }
+        .cons{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2px;
+          margin-bottom: 115px;
+        }
+        .cons .box img{
+          margin: 10px;
+          
+        }
+        .boxp{
+          text-align: center;
+          padding-top: 10px;
+        }
+        .box{
+          display: flex;
+          justify-content: space-around;
+          width: 120px;
+          height: 40px;
+          font-size: 10px;
+          font-weight: 500;
+        }
             .sec3{
               width: 100%;
+            }
+            .footer-part{
+              display: grid;
+              
+              grid-template-columns: repeat(3, 1fr);
+              gap: 20px;
+              padding: 66px 0 74px;
+            }
+            .footer-li{
+              padding-left: 60px;
+            }
+            footer ul li{
+              color: #FFF;
+          font-size: 10px;
+          font-weight: 600;
+            }
+            .link-part{
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              column-gap: 20px;
+              row-gap: 50px;
+              padding-left: 80px;
+            }
+            .last{
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 10px;
+          font-size: 16px;
+          font-weight: 500;
+          padding-top: 74px;
+          padding-bottom: 80px;
+          padding-left: 65px;
+            }
+            .copys{
+              color: rgba(255, 255, 255, 0.60);
+          font-size: 10px;
+          font-weight: 500;
             }
           }
                                       /* media for tablet */
@@ -443,18 +531,30 @@ padding-top: 74px;
       .cow-img{
         width: 80%;
       }
-      .sec2-p{
-        color: #534C64;
+  
+
+  .sec2-h4{
     text-align: right;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    width: 300px;
-    height: 140px;
-    padding: 30px 0 15px; }
+font-size: 48px;
+font-weight: 700;
+line-height: 60px;
+padding-top: 150px;
+padding-left: 1rem;
+  }
     
-    .con{
+    .sec2-p{
+      color: #534C64;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 400px;
+  padding-left: ;
+    }
+    .cons{
       display: grid;
-      grid-template-columns: repeat(none);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-bottom: 115px;
     }
       }
